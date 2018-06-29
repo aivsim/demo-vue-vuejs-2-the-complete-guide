@@ -9,6 +9,11 @@ new Vue({
         y: 0,
         name: 'Max'
     },
+    computed: {
+        output() {
+            return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
+        }
+    },
     methods: {
         sayHello() {
             this.title = 'Hello!';
