@@ -14,6 +14,14 @@ new Vue({
             return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
         }
     },
+    watch: {
+        counter(value) {
+            var vm = this;
+            setTimeout(() => {
+                vm.counter = 0;
+            }, 2000)
+        }
+    },
     methods: {
         sayHello() {
             this.title = 'Hello!';

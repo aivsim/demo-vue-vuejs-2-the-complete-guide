@@ -30,7 +30,7 @@
 		<input type="text" v-model="name">
 		<p>{{ name }}</p>
 
-		<button v-on:click="increase">Increase</button>
+		<button v-on:click="increase(2, $event)">Increase</button>
 		<p>Counter: {{ counter }}</p>
 		<p>Result:: {{ output }}</p>
 	</div>
