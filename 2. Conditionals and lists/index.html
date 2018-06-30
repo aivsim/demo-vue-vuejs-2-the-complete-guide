@@ -19,6 +19,12 @@
 		</template>
 		<p v-show="show">Do you also see me?</p>
 		<button @click="show = !show">Switch</button>
+
+		<ul>
+			<li v-for="ingredient in ingredients">
+				{{ ingredient }}
+			</li>
+		</ul>
 	</div>
 
 	<script src="app.js"></script>
