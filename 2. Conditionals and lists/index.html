@@ -21,10 +21,11 @@
 		<button @click="show = !show">Switch</button>
 
 		<ul>
-			<li v-for="(ingredient, index) in ingredients">
+			<li v-for="(ingredient, index) in ingredients" :key="ingredient">
 				{{ ingredient }} ({{ index }})
 			</li>
 		</ul>
+		<button @click="ingredients.push('spices')">Add New</button>
 		<template v-for="(ingredient, index) in ingredients">
 			<h1>{{ ingredient }}</h1>
 			<p>{{ index }}</p>
