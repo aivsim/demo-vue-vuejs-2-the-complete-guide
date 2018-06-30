@@ -8,7 +8,8 @@ new Vue({
         x: 0,
         y: 0,
         name: 'Max',
-        attachRed: false
+        attachRed: false,
+        color: 'green'
     },
     computed: {
         output() {
