@@ -21,8 +21,8 @@
 		<button @click="show = !show">Switch</button>
 
 		<ul>
-			<li v-for="ingredient in ingredients">
-				{{ ingredient }}
+			<li v-for="(ingredient, index) in ingredients">
+				{{ ingredient }} ({{ index }})
 			</li>
 		</ul>
 	</div>
