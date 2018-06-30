@@ -13,6 +13,12 @@ new Vue({
     computed: {
         output() {
             return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
+        },
+        divClasses() {
+            return {
+                red: this.attachRed,
+                blue: !this.attachRed
+            }
         }
     },
     watch: {
