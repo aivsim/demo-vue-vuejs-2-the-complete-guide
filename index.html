@@ -34,11 +34,12 @@
 		<p>Counter: {{ counter }}</p>
 		<p>Result:: {{ output }}</p>
 
-		<div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
-		<div class="demo" :class="{ red: attachRed }"></div>
-		<div class="demo" :class="[color, {red: attachRed}"></div>
+		<div class="demo" :style="{ 'background-color': color }"></div>
+		<div class="demo" :style="{ backgroundColor: color }"></div>
+		<div class="demo" :style="myStyle"></div>
 		<hr>
 		<input type="text" v-model="color">
+		<input type="text" v-model="width">
 	</div>
 
 	<script src="app.js"></script>

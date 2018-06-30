@@ -9,7 +9,8 @@ new Vue({
         y: 0,
         name: 'Max',
         attachRed: false,
-        color: 'green'
+        color: 'gray',
+        width: 100
     },
     computed: {
         output() {
@@ -19,6 +20,12 @@ new Vue({
             return {
                 red: this.attachRed,
                 blue: !this.attachRed
+            }
+        },
+        myStyle() {
+            return {
+                backgroundColor: this.color,
+                width: this.width + 'px'
             }
         }
     },
