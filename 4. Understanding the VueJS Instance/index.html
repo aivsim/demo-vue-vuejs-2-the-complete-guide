@@ -1,7 +1,26 @@
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!DOCTYPE html>
+<html>
 
-<div id="app">
-  <h1 ref="heading">{{ title }}</h1>
-  <button v-on:click="show">Show Paragraph</button>
-  <p v-if="showParagraph">This is not always visible</p>
-</div>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VueJS</title>
+	<script src="vue.js"></script>
+</head>
+
+<body>
+
+	<div id="app1">
+    <h1 ref="heading">{{ title }}</h1>
+    <button v-on:click="show">Show Paragraph</button>
+    <p v-if="showParagraph">This is not always visible</p>
+  </div>
+  
+  <div id="app2">
+    <h1 ref="heading">{{ title }}</h1>
+  </div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
