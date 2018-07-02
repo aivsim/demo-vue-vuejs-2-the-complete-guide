@@ -3,7 +3,8 @@
         <h3>You may view the User Details here</h3>
         <p>Many Details</p>
         <p>User name: {{ switchName() }}</p>
-        <button @click="resetName">Reset Name</button>
+        <button @click="resetName()">Reset Name</button>
+        <button @click="resetFn()">Reset Fn</button>
     </div>
 </template>
 
@@ -14,7 +15,8 @@
                 type: String,
                 // required: true,
                 // default: 'Max'
-            }
+            },
+            resetFn: Function
         },
         // props: {
         //     myName: String // or [String, Array] for multiple types
