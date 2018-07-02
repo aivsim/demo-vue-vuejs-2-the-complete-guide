@@ -22,7 +22,7 @@
             appHeader: Header,
             appServers: Servers,
             ServerDetails,
-            'app-footer': Footer
+            'app-footer': Footer // Best option
         }
     }
 </script>
